@@ -1,0 +1,89 @@
+#Shop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fefefd;
+}
+.boxShop{
+    display: flex;
+}
+.shopTitulo{
+    margin-bottom: 60px;
+    display: flex;
+     font-size: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+}
+.shopDescription{
+    margin-bottom: 60px;
+}
+.banner2{
+    width: 80%;
+    margin: 15% 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.shopDescription{
+   font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+.descriptionShop{
+    margin: 15% 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-left: 60px;
+}
+.descriptionShop .boxbtn {
+    display: flex;
+    width: 100%;
+    align-items: start;
+}
+.banner2 img{
+    width: 100%;
+    border-radius: 12px;
+}
+@media screen and (max-width:1264px) {
+ #Shop{
+    flex-direction: column;
+    display: flex;
+    margin: 8% 0;
+    align-items: center;
+    justify-content: center;
+ }  
+ .boxShop{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+.descriptionShop{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+} 
+.banner2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner2{
+    width: 100%;
+}
+.banner2 img{
+    border-radius: 3px;
+    width: 80%;
+}
+}
+@media screen and (max-width:500px) {
+    #Shop{
+        padding: 0;
+    }
+    .banner2{
+        padding: 0 20px;
+    }
+    .descriptionShop{
+        padding: 0 20px;
+    }
+}
+

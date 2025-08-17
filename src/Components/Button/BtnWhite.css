@@ -1,0 +1,20 @@
+.btnwhite{
+    border-radius: 22px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #fefefd;
+    transition: .4s;
+    box-shadow: 9px 8px 10px rgb(0,0,0,0.2);
+}
+.btnwhite:hover{
+    background:#0c0e0e;
+    color: #fff;
+     transform: scale(0.90);
+    border: 1px solid #fefefd;
+    cursor: pointer;
+}

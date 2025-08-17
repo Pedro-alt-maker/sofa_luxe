@@ -1,0 +1,156 @@
+header {
+    display: flex;
+    position: sticky;
+    top: -3px;
+    background-color: #0c0e0e;
+    padding: 20px 9%;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btnHeader {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.btnHeader .btn {
+    border: none;
+    color: #0c0e0e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: .5s ease;
+}
+.btn:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 0 10px #fff;
+}
+
+
+header .navbar {
+    display: flex;
+    margin: auto;
+    background-color: #272727;
+    gap: 5px;
+    width: 700px;
+    border-radius: 50px;
+    padding: 19px 22px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header a {
+    color: #FFF;
+    font-size: 1rem;
+    position: relative;
+    font-weight: 500;
+}
+
+header a::after {
+    width: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 4px;
+    transition: .5s steps(7);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #0c0e0e;
+    border-radius: 90px;
+
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+.navbarMobile {
+    background-color: #272727;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    transform: translateY(-900px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    padding-top: 1rem;
+    transition: .6s ease-in-out;
+    box-shadow: 0 3px 5px rgb(0, 0, 0, 0.);
+    
+}
+
+.navbarMobile li {
+    margin: 30px 0;
+}
+
+.menu {
+    width: 36px;
+    height: 35px;
+    display: none;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.menu .line {
+    margin: 7px auto;
+    display: block;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+.menu .line.activar:nth-child(1) {
+
+    transform: translateY(6px) rotate(-45deg);
+}
+
+.menu .line.activar:nth-child(2) {
+    margin: auto;
+    width: 0;
+}
+
+.menu .line.activar:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+
+@media screen and (max-width:1264px) {
+    header .navbar {
+        display: none;
+    }
+
+    header .navbarMobile.active {
+        transform: translateY(0);
+    }
+    .menu{
+        display: block;
+    }
+}
+@media screen and (max-width:335px) {
+    .btnHeader{
+        gap: 25px;
+    }
+}

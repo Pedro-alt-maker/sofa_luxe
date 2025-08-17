@@ -1,0 +1,52 @@
+.boxTitulo {
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.linhatitulo {
+    width: 49%;
+    position: relative;
+    padding: 2px;
+    border-top: 2px solid #000;
+}
+
+.tituloSection {
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: 2px solid #000;
+    background-color: #fefefd;
+    position: absolute;
+}
+
+.boderTitulo {
+    width: 190px;
+    border: 2px solid #000;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+@media screen and (max-width:1314px) {
+    .boxTitulo{
+        margin:16% 0;
+    }
+}
+@media screen and (max-width:899px) {
+    .linhatitulo{
+        width: 80%;
+    }
+}
+@media screen and (max-width:600px) {
+     .boxTitulo{
+        margin:26% 0;
+    }
+}

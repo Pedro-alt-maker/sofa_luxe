@@ -1,0 +1,79 @@
+.shoop{
+    display: flex;
+    min-height: 100vh;
+    padding: 0;
+    flex-direction: column;
+}
+.boxshoop{
+    margin: 2% 0;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fefefd;
+    box-shadow: 0 6px 17px rgb(0,0,0,0.1);
+    display: flex;
+}
+.shoopBanner{
+    width: 40%;
+    display: flex;
+    align-items: end;
+}
+.shoopBanner img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+.shoopDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    margin-right: 70px;
+    justify-content: center;
+}
+.ShooTitulo{
+    margin-bottom: 60px;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.shoopDescription p{
+     font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+.ShoopDescription{
+    margin-bottom: 60px;
+}
+@media screen and (max-width:1264px) {
+ .shoop{
+    flex-direction: column;
+ }   
+ .boxshoop{
+    flex-direction: column;
+ }
+ .shoopDescription{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7%;
+ }
+ .shoopBanner{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24%;
+ }
+ .shoopBanner img{
+    border-radius: 12px;
+    width: 70%;
+ }
+}
+@media screen and (max-width:500px) {
+    .boxshoop{
+        padding: 0;
+    }
+    .shoopBanner{
+        padding-bottom: 45%;
+    }
+.shoopDescription{
+    padding: 20px;
+}
+}

@@ -1,0 +1,27 @@
+#Home{
+    position: relative;
+}
+.animar1{
+    position:absolute;
+    gap: 20px;
+    display: flex;
+    font-size: 80px;
+    bottom: 0;
+    right: 0;
+}
+.animar1 span:nth-child(1){
+    position: absolute;
+    color: red;
+    transition: .9s;
+    
+    animation: flotuar1 .9s infinite linear, ease-out;
+}
+@keyframes flotuar1 {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-25%);
+    }
+   
+}

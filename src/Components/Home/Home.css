@@ -1,0 +1,147 @@
+.titulo {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.luz {
+    color: floralwhite;
+    text-shadow: 0 0 19px #fff;
+}
+
+#gradient1 {
+    position: absolute;
+    top: 0;
+    width: 30rem;
+    right: 0;
+}
+
+.textoDescription {
+    color: #fff;
+
+    font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+
+.boxbtn {
+    margin-top: 40px;
+}
+
+#Home {
+    position: relative;
+    min-height: 100vh;
+    background-color: #0c0e0e;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+
+.lapada {
+    position: absolute;
+    top: -60px;
+    left: 35%;
+    width: 10%;
+}
+
+
+#Caixa_pesquisa input {
+    border-radius: 22px;
+    width: 400px;
+    font-weight: bold;
+    height: 45px;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    padding: 0 12px;
+    backdrop-filter: blur(50px);
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+#Caixa_pesquisa input::placeholder {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#Caixa_pesquisa {
+    display: none;
+    margin-top: 3%;
+    width: 400px;
+    left: 36%;
+    top: 0;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1271px) {
+    #Home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .description {
+        width: 100%;
+        margin: 3% 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_gradient #gradient1 {
+        display: none;
+
+    }
+    .lapada{
+        display: none;
+    }
+}
+
+.bannerHome {
+    margin-top: 5%;
+}
+
+
+
+
+
+@media screen and (max-width:400px) {
+
+    #Caixa_pesquisa {
+        left: 11%;
+        top: 36%;
+    }
+
+    #Caixa_pesquisa input {
+        width: 300px;
+    }
+
+
+}
+
+@media screen and (max-width:350px) {
+    .titulo {
+        font-size: 1.3rem;
+    }
+
+    .bannerHome {
+        width: 100%;
+        margin-top: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bannerHome img {
+        width: 160%;
+    }
+}

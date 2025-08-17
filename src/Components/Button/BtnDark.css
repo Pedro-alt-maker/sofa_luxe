@@ -1,0 +1,21 @@
+.btndark{
+    border-radius: 22px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #0c0e0e;
+    transition: .4s;
+    width: 200px;
+    box-shadow: 9px 8px 10px rgb(0,0,0,0.2);
+}
+.btndark:hover{
+    color: #0c0e0e;
+    transform: scale(0.90);
+    background: #fff;
+    border: 1px solid #0c0e0e;
+    cursor: pointer;
+}
